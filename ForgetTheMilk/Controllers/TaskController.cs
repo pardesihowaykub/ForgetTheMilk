@@ -34,7 +34,7 @@ namespace ForgetTheMilk.Controllers
         public Task(string task,DateTime today)
         {
             //var taskItem = new Task { Description = task };
-          Description = task;
+  Description = task;
             var dueDatePattern = new Regex(@"june\s(0[1-9]|1[0-9]|2[0-9]|3[0-1]|\d)");
 
             var hasDueDate = dueDatePattern.IsMatch(task);
